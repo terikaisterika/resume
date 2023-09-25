@@ -1,0 +1,122 @@
+body {
+  padding: 20px 200px;
+  max-width: 1200px;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  font-size: 26px;
+  
+}
+.menu .button {
+  padding: 10px 20px;
+  margin: 5px;
+  
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 2px 2px #d0cdcd;
+  
+}
+.menu .button:hover {
+  background-color: rgb(203, 214, 214);
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+
+}
+.menu .button:active {
+  background-color:rgb(202, 201, 199);
+}
+.menu .button a:visited {
+  color: black;
+}
+
+
+.blockExperience {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  column-gap: 10%;
+}
+
+.wrapKeySkills {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+.blockKey {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(189, 184, 184);
+  border-radius: 5px;
+}
+
+
+.allocator {
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 992px) 
+and (max-width: 1199px) {
+  body {
+    padding: 20px 15px;
+    min-width: 400px;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, auto);   
+  }
+  .menu .button {
+    padding: 30px 20px;
+  }
+  .wrapKeySkills {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+}
+@media screen and (min-width: 600px) 
+and (max-width: 991px) {
+  body {
+    padding: 20px 15px;
+    min-width: 400px;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .menu .button {
+    padding: 30px 20px;
+  }
+  .blockExperience {
+    display: grid;
+    grid-template-columns: 100%;
+    
+  }
+  .wrapKeySkills {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding: 20px 10px;
+    min-width: 400px;
+    
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    
+  }
+  .menu .button {
+    padding: 30px 20px;
+  }
+  .blockExperience {
+    display: grid;
+    grid-auto-flow: column;
+    min-width: 400px;
+  }
+  .wrapKeySkills {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
